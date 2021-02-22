@@ -1,0 +1,52 @@
+import os
+
+#retorna o diretorio atual em uma string
+os.getcwd()
+
+#existe o arquivo? (true/false)
+os.isfile("nome-arquivo.txt")
+
+#deleta um arquivo
+os.remove("nome-arquivo.txt")
+
+#renomeia um arquivo
+os.rename("nome-arquivo.txt")
+
+#verifica se existe um caminho ou arquivo (True/False) a partir do diretorio atual
+os.path.exists("..\pasta-exemplo")
+
+#retorna o diretorio aboluto de um arquivo
+os.path.abspath("nome-arquivo.txt")
+
+#tamanho do arquivo
+os.path.getsize("nome-arquivo.txt")
+
+#file timestamp
+os.path.getmtime("nome-arquivo.txt")
+
+#criar diretorio
+os.mkdir()
+
+#change current directory
+os.chdir()
+
+#remove empty directory
+os.rmdir()
+
+#retorna uma lista com todas as pastas e arquivos de um diretorio
+os.listdir()
+
+#saber se é uma pasta ou um arquivo
+fullname = os.path.join(name-dir, name-file)    #junta path em qqr plataforma '\' para windows
+os.path.isdir(fullname)
+
+import datetime
+
+#converte o timestamp para um formato legível
+timestamp = os.path.getmtime("nome-arquivo.txt")
+datetime.datetime.fromtimestamp(timestamp)
+
+
+
+
+
